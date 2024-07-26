@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { addDoc } from 'firebase/firestore';
 
-export default function AddRecipe(collection) {
+export default function AddRecipe({collection}) {
   const [newRecipeName, setNewRecipeName] = useState('');
   const [newPrepTime, setNewPrepTime] = useState(0);
   const [isThereDairy, setIsThereDairy] = useState(false);
@@ -13,6 +13,7 @@ export default function AddRecipe(collection) {
       prepTime: newPrepTime,
       dairyOption: isThereDairy,
     });
+    location.reload()
     } catch (err) {
       console.error(err)
     }
