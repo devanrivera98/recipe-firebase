@@ -1,4 +1,5 @@
 import { useRecipeList } from "../../hooks/useRecipeList"
+import { deleteRecipe } from "../../services/deleteRecipe";
 
 
 export default function PersonalRecipeList() {
@@ -13,6 +14,7 @@ export default function PersonalRecipeList() {
           <div key={recipe.id}>
             <h1>{recipe.name}</h1>
             <p>{recipe.prepTime}</p>
+            <button onClick={() => deleteRecipe(recipe.id)}>Delete Movie</button>
           </div>
         ))}
       </div>
