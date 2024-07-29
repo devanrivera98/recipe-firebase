@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { addDoc } from 'firebase/firestore';
+import { auth } from '../../config/firebase-config';
 
 export default function AddRecipe({collection}) {
   const [newRecipeName, setNewRecipeName] = useState('');
@@ -12,6 +13,7 @@ export default function AddRecipe({collection}) {
       name: newRecipeName,
       prepTime: newPrepTime,
       dairyOption: isThereDairy,
+      userId: auth?.currentUser?.uid
     });
     location.reload()
     } catch (err) {
