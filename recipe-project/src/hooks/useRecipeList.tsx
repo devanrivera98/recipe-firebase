@@ -1,13 +1,12 @@
-import { useEffect, useState } from "react";
-import { Recipe } from "../interfaces/recipe";
-import { db } from "../config/firebase-config";
-import { collection } from "firebase/firestore";
-import { getDocs } from "firebase/firestore";
+import { useEffect, useState } from 'react';
+import { Recipe } from '../interfaces/recipe';
+import { db } from '../config/firebase-config';
+import { collection } from 'firebase/firestore';
+import { getDocs } from 'firebase/firestore';
 
 export function useRecipeList() {
-
-    const [recipeList, setRecipeList] = useState<Recipe[]>([]);
-    useEffect(() => {
+  const [recipeList, setRecipeList] = useState<Recipe[]>([]);
+  useEffect(() => {
     const getRecipeList = async () => {
       try {
         const recipeCollectionRef = collection(db, 'recipes');
@@ -29,6 +28,6 @@ export function useRecipeList() {
 
     getRecipeList();
   }, []);
-  
-    return recipeList
+
+  return recipeList;
 }
