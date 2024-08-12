@@ -6,7 +6,7 @@ import AddRecipe from './components/PersonalRecipes/AddRecipe';
 import PersonalRecipeList from './components/PersonalRecipes/PersonalRecipeList';
 
 function App() {
-  
+
   const recipeCollectionRef = collection(db, 'recipes');
 
   return (
