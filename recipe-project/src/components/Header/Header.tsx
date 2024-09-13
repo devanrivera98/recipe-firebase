@@ -1,4 +1,9 @@
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
+
+
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -7,12 +12,18 @@ export default function Header() {
           <div>
             <h1 className="text-xl font-extrabold font-body text-lightOrange">Heirloom</h1>
           </div>
-          <div>
+          <div className="flex w-full justify-end">
+            <GiHamburgerMenu />
+          </div>
+          <div className={isOpen ? 'block' : 'hidden'}>
             <ul className="flex justify-between gap-8">
               <li className="text-xl font-heading">Log In</li>
               <li className="text-xl font-heading">Recipes</li>
               <li className="text-xl font-heading">Tips</li>
             </ul>
+          </div>
+          <div>
+
           </div>
         </div>
       </header>
