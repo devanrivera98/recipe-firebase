@@ -1,9 +1,10 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+import './header.css'
 
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <>
@@ -12,18 +13,17 @@ export default function Header() {
           <div>
             <h1 className="text-xl font-extrabold font-body text-lightOrange">Heirloom</h1>
           </div>
-          <div className="flex w-full justify-end">
-            <GiHamburgerMenu />
+          <div className="flex w-full justify-end md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)}>
+              <GiHamburgerMenu />
+            </button>
           </div>
-          <div className={isOpen ? 'block' : 'hidden'}>
-            <ul className="flex justify-between gap-8">
-              <li className="text-xl font-heading">Log In</li>
-              <li className="text-xl font-heading">Recipes</li>
-              <li className="text-xl font-heading">Tips</li>
+          <div className={`${isOpen ? 'block': 'hidden md:block'}`}>
+            <ul className={`${isOpen ? 'mobile-menu flex-col gap-10' : 'justify-between gap-8'} flex`}>
+              <li className={`${isOpen ? 'pt-10 mobile-menu-li' : ''} text-xl font-heading`}>LOG IN</li>
+              <li className={`${isOpen ? 'mobile-menu-li' : ''} text-xl font-heading`}>RECIPES</li>
+              <li className={`${isOpen ? 'mobile-menu-li' : ''} text-xl font-heading`}>TIPS</li>
             </ul>
-          </div>
-          <div>
-
           </div>
         </div>
       </header>
