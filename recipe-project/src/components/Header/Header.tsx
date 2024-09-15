@@ -21,8 +21,8 @@ export default function Header() {
           <div className={`${isOpen ? 'div-menu-open': 'div-menu-closed md:block'}`}>
             <ul className={`${isOpen ? 'mobile-menu  flex-col gap-10' : 'mobile-menu-closed justify-between gap-8'} flex`}>
               <li className={`${isOpen ? 'pt-10 menu-li-open' : 'menu-li-closed'} text-xl font-heading `}>LOG IN</li>
-              <li className={`${isOpen ? 'menu-li-open' : ''} text-xl font-heading`}>RECIPES</li>
-              <li className={`${isOpen ? 'menu-li-open' : ''} text-xl font-heading `}>TIPS</li>
+              <li className={`${isOpen ? 'menu-li-open' : 'menu-li-closed'} text-xl font-heading`}>RECIPES</li>
+              <li className={`${isOpen ? 'menu-li-open' : 'menu-li-closed'} text-xl font-heading `}>TIPS</li>
             </ul>
           </div>
         </div>
