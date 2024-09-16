@@ -14,11 +14,11 @@
     .mobile-menu-closed {
       width: 0px;
       transform: translateX(-300px);
+      flex-direction: row;
     }
 
     .menu-li-open {
       margin: 0 1rem;
-      transform: translateX(10px);
       transition: transform 0.6s ease-in;
     }
 

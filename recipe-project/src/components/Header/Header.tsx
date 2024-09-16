@@ -1,10 +1,28 @@
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
+import { IoClose } from "react-icons/io5";
+
+
+import { useState, useEffect } from "react";
 import './header.css'
 
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.screen.width > 768) {
+        setIsOpen(false)
+      }
+    }
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  //need to alternate login with my account once accounts are functional
 
   return (
     <>
@@ -15,7 +33,7 @@ export default function Header() {
           </div>
           <div className="flex w-full justify-end md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
-              <GiHamburgerMenu />
+              {isOpen ? <IoClose size={28} strokeWidth={15}/>        : <GiHamburgerMenu  size={25} />}
             </button>
           </div>
           <div className={`${isOpen ? 'div-menu-open': 'div-menu-closed md:block'}`}>
