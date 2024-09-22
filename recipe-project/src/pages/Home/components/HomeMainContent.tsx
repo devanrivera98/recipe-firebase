@@ -1,14 +1,14 @@
 import '../home.css'
 
 export default function HomeMainContent() {
-  
+
   return (
     <>
       <section className="home-top-of-page  pt-16 px-2 gap-5">
           <img alt="martha-stewart-recipe-collection" src="./images/martha-stewart-photo.jpg" />
           <div className="bg-fadedGreen">
             <h1 className='text-center py-2'>Food News</h1>
-            <div className='grid grid-cols-1 gap-10 py-2'>
+            <div className='grid sm:grid-cols-1 lg:grid-cols-1 md:grid-cols-2 gap-10 py-5'>
               <a className='flex mx-5'>
                 <div className='w-28 h-20 flex-shrink-0'>
                   <img className='w-full h-full' src='https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2023/09/Beef-Stew-main.jpg' />
