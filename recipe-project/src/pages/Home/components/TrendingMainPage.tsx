@@ -6,22 +6,22 @@ export default function TrendingMainPage() {
           <div>
             <h1 className="text-center text-3xl font-semibold">Trending Now</h1>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-10">
             <a className="md:flex">
-              <div className="max-w-64 w-full md:w-36 md:w-auto">
-                <img src="./images/apple-photo.jpg"></img>
+              <div className="max-w-64 w-34 h-36 md:w-60 md:h-36 flex-shrink-0">
+                <img className="w-full h-full" src="./images/apple-photo.jpg"></img>
               </div>
               <div>
-                <span>
+                <span className="text-2xl">
                   The 18 Recipes We Can't Wait To Make This September
                 </span>
               </div>
             </a>
             <a className="md:flex">
-              <div className="max-w-64 w-full md:w-36 md:w-auto">
-                <img className="w-full h-auto object-fill aspect-square" src="./images/banana-bread-photo.jpg"></img>
+              <div className="max-w-64 w-34 h-36 md:w-60 md:h-36 flex-shrink-0">
+                <img className="w-full h-full" src="./images/banana-bread-photo.jpg"></img>
               </div>
-              <div>
+              <div className="flex justify-center align-center">
                 <span>
                   The 18 Recipes We Can't Wait To Make This September
                 </span>
