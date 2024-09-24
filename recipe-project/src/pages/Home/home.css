@@ -4,6 +4,12 @@
   align-items: start;
 }
 
+.trending-title {
+    border-bottom: solid 20px rgb(231, 170, 70);
+      display: inline-block;
+      line-height: 0.8rem;
+}
+
 
 @media screen and (min-width: 1024px) {
   .home-top-of-page {
