@@ -1,4 +1,24 @@
 export default function TrendingMainPage() {
+
+  const articles = [
+    {
+      image: "./images/apple-photo.jpg",
+      title: 'The 18 Recipes We Cannot Wait To Make This September',
+    },
+    {
+      image: "./images/banana-bread-photo.jpg",
+      title: 'Our Best Banana Bread Recipe of all time'
+    },
+    {
+      image: "./images/apple-photo.jpg",
+      title: 'The 18 Recipes We Cannot Wait To Make This September',
+    },
+    {
+      image: "./images/banana-bread-photo.jpg",
+      title: 'Our Best Banana Bread Recipe of all time'
+    }
+  ]
+
   return (
     <>
       <section className="px-4">
@@ -7,46 +27,18 @@ export default function TrendingMainPage() {
             <h1 className="text-center text-3xl font-semibold trending-title">Trending Now</h1>
           </div>
           <div className="grid grid-cols-2 gap-5 md:gap-10">
-            <a className="md:flex">
-              <div className="max-w-64 w-34 h-32 md:w-56 md:h-36 flex-shrink-0">
-                <img className="w-full h-full" src="./images/apple-photo.jpg"></img>
+          {articles.map((article, index) => (
+            <a key={index} className="md:flex">
+              <div className="aspect-ratio">
+                <img className="w-full h-full object-cover" src={article.image}></img>
               </div>
               <div className="flex justify-center items-center">
                 <span className="font-bold text-lg md:text-2xl md:px-2">
-                  The 18 Recipes We Can't Wait To Make This September
+                  {article.title}
                 </span>
               </div>
             </a>
-            <a className="md:flex">
-              <div className="max-w-64 w-34 h-32 md:w-56 md:h-36 flex-shrink-0">
-                <img className="w-full h-full" src="./images/banana-bread-photo.jpg"></img>
-              </div>
-              <div className="flex justify-center items-center">
-                <span className="font-bold text-lg md:text-2xl md:px-2">
-                  The 18 Recipes We Can't Wait To Make This September
-                </span>
-              </div>
-            </a>
-            <a className="md:flex">
-              <div className="max-w-64 w-34 h-32 md:w-56 md:h-36 flex-shrink-0">
-                <img className="w-full h-full" src="./images/apple-photo.jpg"></img>
-              </div>
-              <div className="flex justify-center items-center">
-                <span className="font-bold text-lg md:text-2xl md:px-2">
-                  Our 10 Best Apple Crisp Recipes of All Time
-                </span>
-              </div>
-            </a>
-            <a className="md:flex">
-              <div className="max-w-64 w-34 h-32 md:w-56 md:h-36 flex-shrink-0">
-                <img className="w-full h-full" src="./images/banana-bread-photo.jpg"></img>
-              </div>
-              <div className="flex justify-center items-center">
-                <span className="font-bold text-lg md:text-2xl md:px-2">
-                  We're Hooked on Hatch Chiles
-                </span>
-              </div>
-            </a>
+          ))}
           </div>
         </div>
       </section>

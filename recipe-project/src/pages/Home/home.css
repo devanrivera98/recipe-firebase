@@ -10,10 +10,26 @@
       line-height: 0.8rem;
 }
 
+.aspect-ratio {
+  aspect-ratio: 5 / 3;
+}
+
+@media screen and (min-width: 768px) {
+
+  .aspect-ratio {
+    max-width: 10rem;
+  }
+
+}
 
 @media screen and (min-width: 1024px) {
   .home-top-of-page {
     display: grid;
     grid-template-columns: auto 25rem;
+  }
+
+  .aspect-ratio {
+    max-width: 15rem;
+    aspect-ratio: 3 / 2;
   }
 }
