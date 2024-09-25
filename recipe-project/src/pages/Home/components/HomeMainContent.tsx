@@ -14,7 +14,7 @@ export default function HomeMainContent() {
                   <img className='w-full h-full' src='https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2023/09/Beef-Stew-main.jpg' />
                 </div>
                 <div className='px-2'>
-                  <span>Ina Garten's Beef Stew Recipe Is What We're Making</span>
+                  <span className='title-decoration font-bold'>Ina Garten's Beef Stew Recipe Is What We're Making</span>
                 </div>
               </a>
               <a className='flex'>
@@ -22,7 +22,7 @@ export default function HomeMainContent() {
                   <img className='w-full h-full' src='./images/apple-photo.jpg' />
                 </div>
                 <div className='px-2'>
-                  <span>These Apple Recipes Are Trending, and We Want to Try All of Them</span>
+                  <span className='title-decoration font-bold'>These Apple Recipes Are Trending, and We Want to Try All of Them</span>
                 </div>
               </a>
               <a className='flex'>
@@ -30,7 +30,7 @@ export default function HomeMainContent() {
                   <img className='w-full h-full' src='./images/banana-bread-photo.jpg' />
                 </div>
                 <div className='px-2'>
-                  <span>These Apple Recipes Are Trending, and We Want to Try All of Them</span>
+                  <span className='title-decoration font-bold'>These Apple Recipes Are Trending, and We Want to Try All of Them</span>
                 </div>
               </a>
               <a className='flex'>
@@ -38,7 +38,7 @@ export default function HomeMainContent() {
                   <img className='w-full h-full' src='https://www.sprinklesandsprouts.com/wp-content/uploads/2019/04/Authentic-Spaghetti-Bolognese-SQ-500x500.jpg' />
                 </div>
                 <div className='px-2'>
-                  <span>These Apple Recipes Are Trending, and We Want to Try All of Them</span>
+                  <span className='title-decoration font-bold'>These Apple Recipes Are Trending, and We Want to Try All of Them</span>
                 </div>
               </a>
             </div>

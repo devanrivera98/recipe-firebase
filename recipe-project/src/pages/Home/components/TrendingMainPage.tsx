@@ -30,10 +30,10 @@ export default function TrendingMainPage() {
           {articles.map((article, index) => (
             <a key={index} className="md:flex">
               <div className="aspect-ratio">
-                <img className="w-full h-full object-cover" src={article.image}></img>
+                <img className="cursor-pointer w-full h-full object-cover" src={article.image}></img>
               </div>
               <div className="flex justify-center items-center">
-                <span className="font-bold text-lg md:text-2xl md:px-2">
+                <span className="title-decoration font-bold text-lg md:text-2xl md:px-2">
                   {article.title}
                 </span>
               </div>
