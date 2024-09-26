@@ -21,7 +21,7 @@ export default function TrendingMainPage() {
 
   return (
     <>
-      <section className="px-4">
+      <section className="px-4 mb-16">
         <div>
           <div className="pb-0.5 mb-6 flex md:justify-center">
             <h1 className="text-center text-3xl font-semibold trending-title">Trending Now</h1>

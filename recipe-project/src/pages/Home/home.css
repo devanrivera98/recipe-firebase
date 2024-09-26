@@ -14,6 +14,15 @@
   aspect-ratio: 5 / 3;
 }
 
+.orange-cranberry-aspect {
+  aspect-ratio:  8 / 2;
+}
+
+.peanut-hero {
+  margin: 0 ;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
 
   .aspect-ratio {
