@@ -28,8 +28,8 @@ export default function TrendingMainPage() {
           </div>
           <div className="grid grid-cols-2 gap-5 md:gap-10">
           {articles.map((article, index) => (
-            <a key={index} className="md:flex">
-              <div className="aspect-ratio">
+            <a key={index} className="lg:flex">
+              <div className="trending-aspect-ratio">
                 <img className="cursor-pointer w-full h-full object-cover" src={article.image}></img>
               </div>
               <div className="flex justify-center items-center">

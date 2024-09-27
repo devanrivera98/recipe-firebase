@@ -10,13 +10,9 @@
   line-height: 0.8rem;
 }
 
-.aspect-ratio {
+.trending-aspect-ratio {
   aspect-ratio: 5 / 3;
 }
-
-/* .orange-cranberry-aspect {
-  aspect-ratio:  3 / 1;
-} */
 
 .orange-grid-container {
   grid-template-areas: "hero";
@@ -41,8 +37,8 @@
 
 @media screen and (min-width: 768px) {
 
-  .aspect-ratio {
-    max-width: 10rem;
+  .trending-aspect-ratio {
+    aspect-ratio: 5 / 3 ;
   }
 
   .orange-cranberry-aspect {
@@ -63,9 +59,9 @@
     grid-template-columns: auto 25rem;
   }
 
-  .aspect-ratio {
+  .trending-aspect-ratio {
     max-width: 15rem;
-    aspect-ratio: 3 / 2;
+      aspect-ratio: 3 / 2;
   }
 
     .orange-cranberry-aspect {
