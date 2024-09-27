@@ -2,12 +2,12 @@ export default function OrangeCranberryHero() {
   return (
     <>
     <section>
-      <a>
-        <div className="orange-cranberry-aspect">
-          <img className="w-full h-full" src="./images/orange-cranberry-photo.png"></img>
+      <a className="grid orange-grid-container">
+        <div className="orange-cranberry-aspect orange-image-container">
+          <img className="w-full h-full object-cover" src="./images/orange-cranberry-photo.png"></img>
         </div>
-        <div className="flex flex-col w-96">
-          <div className="p-6">
+        <div className="orange-hero-card ml-10">
+          <div className="flex flex-col p-6 w-96 bg-lightOrange">
             <div>
             <span className="text-lg">IN THE KITCHEN</span>
             </div>
