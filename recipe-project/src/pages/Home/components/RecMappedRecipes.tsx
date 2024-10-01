@@ -1,29 +1,43 @@
 import './pickedRecipes.css'
 
-export default function RecMappedRecipes({recipeList}) {
+interface Recipe {
+  id: number;
+  image: string;
+  foodType: string;
+  name: string;
+}
 
-  const mappedRecipes = recipeList.map((recipe) => (
+interface RecMappedRecipesProps {
+  categoryTitle: string;
+  recipeList: Recipe[];
+}
+
+export default function RecMappedRecipes({categoryTitle, recipeList}: RecMappedRecipesProps) {
+
+  const mappedRecipes = recipeList.map((recipe: Recipe) => (
     <>
-      <div>
-        <div className='mapped-recipe-image-container'>
-          <img className='w-full h-full object-cover' src={recipe.categoryTitle} />
+      <a>
+        <div>
+          <div className='mapped-recipe-image-container'>
+            <img className='w-full h-full object-cover' src={recipe.image} />
+          </div>
+          <h5 className='py-2.5 md:py-5'>{recipe.foodType}</h5>
+          <h1 className='text-2xl font-bold'>{recipe.name}</h1>
         </div>
-        <h5 className='py-5'>{recipe.foodType}</h5>
-        <h1 className='text-2xl font-bold'>{recipe.name}</h1>
-      </div>
+      </a>
     </>
   ))
 
   return (
     <>
-      <section className="mt-16">
+      <div className="mt-16">
         <div className="flex justify-center">
-          <h1 className="text-4xl font-semibold">Quick & Easy</h1>
+          <h1 className="text-4xl font-semibold mb-8">{categoryTitle}</h1>
         </div>
         <div className="recipe-grid">
           {mappedRecipes}
         </div>
-      </section>
+      </div>
     </>
   )
 }

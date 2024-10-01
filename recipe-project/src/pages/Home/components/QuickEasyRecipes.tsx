@@ -1,23 +1,42 @@
 import './pickedRecipes.css'
+import RecMappedRecipes from './RecMappedRecipes'
+
+
 
 export default function QuickEasyRecipes() {
 
+  const quickRecipes = [
+    {
+      id: 1,
+      image: "./images/apple-photo.jpg",
+      foodType: 'Chicken',
+      name: 'Balsamic Chicken'
+    },
+    {
+      id: 2,
+      image: "./images/banana-bread-photo.jpg",
+      foodType: 'Chicken',
+      name: 'Balsamic Chicken'
+    },
+    {
+      id: 3,
+      image: "./images/martha-stewart-photo.jpg",
+      foodType: 'Chicken',
+      name: 'Balsamic Chicken'
+    },
+    {
+      id: 4,
+      image: "./images/apple-photo.jpg",
+      foodType: 'Chicken',
+      name: 'Balsamic Chicken'
+    },
+  ]
+
   return (
     <>
-      <section className="mt-16">
-        <div className="flex justify-center">
-          <h1 className="text-4xl font-semibold">Quick & Easy</h1>
-        </div>
-        <div className="recipe-grid">
-          <div>
-            <div className='mapped-recipe-image-container'>
-              <img className='w-full h-full object-cover' src='./images/banana-bread-photo.jpg' />
-            </div>
-            <h5 className='py-5'>CHICKEN BREAST</h5>
-            <h1 className='text-2xl font-bold'>Sheet Pan Parmesan Chicken and Veggies</h1>
-          </div>
-        </div>
-      </section>
+    <section className='px-2 md:px-0'>
+      <RecMappedRecipes categoryTitle='Quick and Easy' recipeList={quickRecipes} />
+    </section>
     </>
   )
 }
