@@ -5,7 +5,16 @@
 }
 
 .mapped-recipe-image-container {
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 3 / 2;
+}
+
+.mapped-recipes-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #FF7F50;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 768px ) {
@@ -16,7 +25,4 @@
     gap: 3rem;
   }
 
-.mapped-recipe-image-container {
-      aspect-ratio: 2 / 1;
-    }
 }

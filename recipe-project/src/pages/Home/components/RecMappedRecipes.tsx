@@ -1,4 +1,7 @@
 import './pickedRecipes.css'
+import { FaHeart } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
+
 
 interface Recipe {
   id: number;
@@ -17,7 +20,10 @@ export default function RecMappedRecipes({categoryTitle, recipeList}: RecMappedR
   const mappedRecipes = recipeList.map((recipe: Recipe) => (
     <>
       <a>
-        <div>
+        <div className='relative'>
+          <button className='mapped-recipes-button'>
+            <FaRegHeart style={{color: 'white'}} />
+          </button>
           <div className='mapped-recipe-image-container'>
             <img className='w-full h-full object-cover' src={recipe.image} />
           </div>
