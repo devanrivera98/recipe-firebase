@@ -5,7 +5,7 @@ import RecMappedRecipes from './RecMappedRecipes'
 
 
 
-export default function QuickEasyRecipes() {
+export default function WeeknightWinnersRecipes() {
 
   const quickRecipes = [
     {

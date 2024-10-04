@@ -6,7 +6,7 @@ export default function RecMappedRecipes({categoryTitle, recipeList}: RecMappedR
 
   const mappedRecipes = recipeList.map((recipe: RecRecipe) => (
     <>
-      <EachRecRecipe id={recipe.id} image={recipe.image} foodType={recipe.foodType} name={recipe.name}  />
+      <EachRecRecipe key={recipe.id} id={recipe.id} image={recipe.image} foodType={recipe.foodType} name={recipe.name}  />
     </>
   ))
 
