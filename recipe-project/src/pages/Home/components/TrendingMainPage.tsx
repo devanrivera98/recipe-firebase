@@ -2,19 +2,19 @@ export default function TrendingMainPage() {
 
   const articles = [
     {
-      image: "./images/apple-photo.jpg",
+      image: "./images/pie-collage.png",
       title: 'The 18 Recipes We Cannot Wait To Make This September',
     },
     {
-      image: "./images/banana-bread-photo.jpg",
+      image: "./images/salad.png",
       title: 'Our Best Banana Bread Recipe of all time'
     },
     {
-      image: "./images/apple-photo.jpg",
+      image: "./images/pizza.png",
       title: 'The 18 Recipes We Cannot Wait To Make This September',
     },
     {
-      image: "./images/banana-bread-photo.jpg",
+      image: "./images/banana-based.png",
       title: 'Our Best Banana Bread Recipe of all time'
     }
   ]

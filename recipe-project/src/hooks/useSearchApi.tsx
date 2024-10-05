@@ -1,6 +1,6 @@
 export default async function useSearchApi(value: string) {
 
-const accessPoint = `https://api.spoonacular.com/recipes/complexSearch?query=${value}&number=5&apiKey=${import.meta.env.VITE_SPOONACULAR_KEY}`;
+const accessPoint = `https://api.spoonacular.com/recipes/complexSearch?query=${value}&number=50&apiKey=${import.meta.env.VITE_SPOONACULAR_KEY}`;
 
 
   try {
