@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: ['./src/**/*.{html,js,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'heading': ['Lora', 'serif'],
+        'body': ['Poppins', 'san-serif']
+      },
+      colors: {
+        fadedGreen: '#F5F6EA',
+        lightGreen: '#2E8B57',
+        lightOrange: '#FF7F50',
+        neonGreen: '#98FF98'
+      }
+    },
   },
   plugins: [],
 };
