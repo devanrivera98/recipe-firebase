@@ -78,7 +78,7 @@ export default function WeeknightWinnersRecipes() {
 
   return (
     <>
-    <section className='px-2 md:px-0'>
+    <section className='px-2 mb-16 md:px-0'>
       <RecMappedRecipes categoryTitle='Weeknight Winners' recipeList={quickRecipes} />
     </section>
     </>
