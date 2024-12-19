@@ -12,7 +12,7 @@ module.exports = {
         lightGreen: '#2E8B57',
         lightOrange: '#FF7F50',
         neonGreen: '#98FF98',
-        charcoal: '#333333'
+        charcoal: '#5D4F4A'
       }
     },
   },
